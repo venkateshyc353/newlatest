@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% if dataa %}
+{% for h in dataa%}
+<table style="width:100%">
+  <tr>
+    <th>name</th>
+    <th>mobile</th>
+    <th>addres</th>
+      <th>salary</th>
+      <th>surname</th>
+  </tr>
+  <tr>
+    <td>{{h.name}}</td>
+    <td>{{h.mobile}}</td>
+    <td>{{h.addres}}</td>
+      <td>{{h.salary}}</td>
+      <td>{{h.surname}}</td>
+  </tr>
+
+</table>
+{%endfor%}
+{%else%}
+<h1>data not avalibile</h1>
+{%endif%}
+</body>
+</html>
